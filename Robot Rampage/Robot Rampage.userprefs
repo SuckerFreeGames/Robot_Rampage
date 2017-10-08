@@ -1,0 +1,18 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Chip\PlayerShoot.cs">
+    <Files>
+      <File FileName="Assets\Chip\PlayerBehaviorScript.cs" Line="109" Column="3" />
+      <File FileName="Assets\Chip\PlayerShoot.cs" Line="162" Column="1" />
+      <File FileName="Assets\Chip\PlayerHealth.cs" Line="1" Column="1" />
+      <File FileName="Assets\PyroParticles\Prefab\Script\FireLightScript.cs" Line="93" Column="7" />
+      <File FileName="Assets\PyroParticles\Prefab\Script\FireProjectileScript.cs" Line="107" Column="1" />
+      <File FileName="Assets\PyroParticles\Prefab\Script\FireBaseScript.cs" Line="100" Column="4" />
+      <File FileName="Assets\PyroParticles\Prefab\Script\FireCollisionForwardScript.cs" Line="25" Column="6" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

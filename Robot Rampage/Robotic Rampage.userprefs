@@ -1,0 +1,17 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Elevator_Doors.cs">
+    <Files>
+      <File FileName="Assets\Elevator_Door_Left.cs" Line="46" Column="3" />
+      <File FileName="Assets\Elevator_door_right.cs" Line="32" Column="44" />
+      <File FileName="Assets\Elevator_Doors.cs" Line="17" Column="2" />
+      <File FileName="Assets\Enemy_Navigation\EyeBotBehavior.cs" Line="30" Column="16" />
+      <File FileName="Assets\Enemy_Navigation\PowerModuleHealth.cs" Line="17" Column="27" />
+      <File FileName="Assets\Enemy_Navigation\ObjectHealth.cs" Line="107" Column="48" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
