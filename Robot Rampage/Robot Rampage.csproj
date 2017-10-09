@@ -164,6 +164,9 @@
     <Compile Include="Assets\Spawner\Explodeonawake3.cs" />
     <Compile Include="Assets\Spawner\SphereExplode.cs" />
     <Compile Include="Assets\START.cs" />
+    <Compile Include="Assets\TypeOut\Scripts\GUIScript.cs" />
+    <Compile Include="Assets\TypeOut\Scripts\TypeOutEditor.cs" />
+    <Compile Include="Assets\TypeOut\Scripts\TypeOutScript.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\JMO Assets\!JMO Assets Readme.txt" />
