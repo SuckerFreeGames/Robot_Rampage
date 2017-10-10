@@ -12,7 +12,7 @@ public class START : MonoBehaviour {
 	void Update () {
 		if (Input.GetMouseButtonDown(0))
 		{
-			Application.LoadLevel("Test_Level");
+			Application.LoadLevel("Level_1");
 		}
 	}
 }

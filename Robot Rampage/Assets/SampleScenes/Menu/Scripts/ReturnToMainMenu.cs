@@ -1,6 +1,8 @@
 using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+//using System.Collections;
+
 
 public class ReturnToMainMenu : MonoBehaviour
 {
@@ -12,7 +14,7 @@ public class ReturnToMainMenu : MonoBehaviour
         DontDestroyOnLoad(this);
     }
 
-
+	/*
     private void OnLevelWasLoaded(int level)
     {
         m_Levelloaded = true;
@@ -29,11 +31,12 @@ public class ReturnToMainMenu : MonoBehaviour
             m_Levelloaded = false;
         }
     }
+	*/
 
-
-    public void GoBackToMainMenu()
+	public void GoBackToMainMenu(string Title_Level)
     {
         Debug.Log("going back to main menu");
-        SceneManager.LoadScene("MainMenu");
+		//Application.LoadLevel("Title_Level");
+		SceneManager.LoadScene("Title_Level");
     }
 }

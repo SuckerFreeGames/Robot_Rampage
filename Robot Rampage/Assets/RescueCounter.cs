@@ -18,7 +18,7 @@ public class RescueCounter : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
 
 		RCtext.text = "Survivors: " + RCounter.ToString ();
 

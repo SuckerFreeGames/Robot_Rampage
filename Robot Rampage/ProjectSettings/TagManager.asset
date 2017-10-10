@@ -10,6 +10,7 @@ TagManager:
   - LaserBeamEnd
   - Glow
   - Survivor
+  - Counter
   layers:
   - Default
   - TransparentFX

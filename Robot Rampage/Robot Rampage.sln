@@ -1,11 +1,11 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2017
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Robot Rampage", "Robot Rampage.csproj", "{7F3C983F-BABE-1CC0-AD8A-E7150D4B9E1A}"
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Robot Rampage", "Assembly-CSharp.csproj", "{AA7A506D-67BD-D287-8B55-4EA8ED3DA9D2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Robot Rampage.Plugins", "Robot Rampage.Plugins.csproj", "{592FC1CE-8F45-584A-8D68-A03F7A7F219F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Robot Rampage", "Assembly-CSharp-firstpass.csproj", "{FE7CF6D6-0159-C735-7555-A4A85D1D10E3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Robot Rampage.Editor", "Robot Rampage.Editor.csproj", "{66E54FE2-0E27-6596-2346-DC8E0DF7A2D8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Robot Rampage", "Assembly-CSharp-Editor.csproj", "{454EB8F5-1CBC-F4A3-E985-151194DDFA3B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,20 +13,23 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{7F3C983F-BABE-1CC0-AD8A-E7150D4B9E1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7F3C983F-BABE-1CC0-AD8A-E7150D4B9E1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7F3C983F-BABE-1CC0-AD8A-E7150D4B9E1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7F3C983F-BABE-1CC0-AD8A-E7150D4B9E1A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{592FC1CE-8F45-584A-8D68-A03F7A7F219F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{592FC1CE-8F45-584A-8D68-A03F7A7F219F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{592FC1CE-8F45-584A-8D68-A03F7A7F219F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{592FC1CE-8F45-584A-8D68-A03F7A7F219F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{66E54FE2-0E27-6596-2346-DC8E0DF7A2D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{66E54FE2-0E27-6596-2346-DC8E0DF7A2D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{66E54FE2-0E27-6596-2346-DC8E0DF7A2D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{66E54FE2-0E27-6596-2346-DC8E0DF7A2D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA7A506D-67BD-D287-8B55-4EA8ED3DA9D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA7A506D-67BD-D287-8B55-4EA8ED3DA9D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA7A506D-67BD-D287-8B55-4EA8ED3DA9D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA7A506D-67BD-D287-8B55-4EA8ED3DA9D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE7CF6D6-0159-C735-7555-A4A85D1D10E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE7CF6D6-0159-C735-7555-A4A85D1D10E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE7CF6D6-0159-C735-7555-A4A85D1D10E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE7CF6D6-0159-C735-7555-A4A85D1D10E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{454EB8F5-1CBC-F4A3-E985-151194DDFA3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{454EB8F5-1CBC-F4A3-E985-151194DDFA3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{454EB8F5-1CBC-F4A3-E985-151194DDFA3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{454EB8F5-1CBC-F4A3-E985-151194DDFA3B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
 	EndGlobalSection
 EndGlobal
