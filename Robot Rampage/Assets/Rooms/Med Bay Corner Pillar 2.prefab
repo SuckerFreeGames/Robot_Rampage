@@ -22,12 +22,13 @@ GameObject:
   - component: {fileID: 33341496886077102}
   - component: {fileID: 23496921380290232}
   - component: {fileID: 65290787353743720}
+  - component: {fileID: 208750460199863954}
   m_Layer: 0
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &1842143098590096
 GameObject:
@@ -37,6 +38,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4607922521661710}
+  - component: {fileID: 65348133109841568}
   m_Layer: 0
   m_Name: Med Bay Corner Pillar 2
   m_TagString: Untagged
@@ -63,9 +65,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1842143098590096}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 412.78, y: 4, z: -557.8}
-  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 193.68613, y: 2.3999996, z: 803.7751}
+  m_LocalScale: {x: 0.39999998, y: 0.39999998, z: 0.39999998}
   m_Children:
   - {fileID: 4590092755852614}
   m_Father: {fileID: 0}
@@ -101,6 +103,7 @@ MeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!33 &33341496886077102
 MeshFilter:
@@ -121,3 +124,30 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 9.000002, y: 40, z: 10.000002}
   m_Center: {x: 0, y: 20, z: 0}
+--- !u!65 &65348133109841568
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1842143098590096}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!208 &208750460199863954
+NavMeshObstacle:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1185741279179714}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 4.5, y: 20, z: 5}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 20, z: 0}
+  m_TimeToStationary: 0.5

@@ -23,7 +23,7 @@ GameObject:
   m_Name: Barraks Lockers 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!1 &1559628521940204
@@ -36,12 +36,13 @@ GameObject:
   - component: {fileID: 4439956727560456}
   - component: {fileID: 33786386407669790}
   - component: {fileID: 23726517413404850}
+  - component: {fileID: 208993596240092556}
   m_Layer: 0
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &4040958170154488
 Transform:
@@ -49,14 +50,14 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1408996438585972}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 346.6872, y: 4, z: -653.9836}
-  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 157.31998, y: 2, z: 670.94006}
+  m_LocalScale: {x: 0.40000024, y: 0.4, z: 0.40000024}
   m_Children:
   - {fileID: 4439956727560456}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!4 &4439956727560456
 Transform:
   m_ObjectHideFlags: 1
@@ -100,6 +101,7 @@ MeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!33 &33786386407669790
 MeshFilter:
@@ -108,3 +110,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1559628521940204}
   m_Mesh: {fileID: 4300000, guid: cfa44ba54c08b4a4eae357732102609d, type: 3}
+--- !u!208 &208993596240092556
+NavMeshObstacle:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1559628521940204}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 10.500001, y: 16.5, z: 5}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 16.5, z: 0}
+  m_TimeToStationary: 0.5

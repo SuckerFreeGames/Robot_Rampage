@@ -16,13 +16,13 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 4000013480415816}
-  - 65: {fileID: 65000013409351768}
-  - 65: {fileID: 65000014271973018}
-  - 65: {fileID: 65000013934360186}
-  - 208: {fileID: 208000011882306742}
+  - component: {fileID: 4000013480415816}
+  - component: {fileID: 65000013409351768}
+  - component: {fileID: 65000014271973018}
+  - component: {fileID: 65000013934360186}
+  - component: {fileID: 208000011882306742}
   m_Layer: 0
   m_Name: Main Hall Extra Wide Arch
   m_TagString: Untagged
@@ -35,11 +35,11 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 4000014196853546}
-  - 33: {fileID: 33000011052018248}
-  - 23: {fileID: 23000010257403362}
+  - component: {fileID: 4000014196853546}
+  - component: {fileID: 33000011052018248}
+  - component: {fileID: 23000010257403362}
   m_Layer: 0
   m_Name: default
   m_TagString: Untagged
@@ -53,14 +53,14 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012069994696}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -58.66, y: 2, z: -230.39}
-  m_LocalScale: {x: 0.42, y: 0.4, z: 0.4}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 232.82, y: 2.4, z: 866.34}
+  m_LocalScale: {x: 0.4200007, y: 0.4, z: 0.40000072}
   m_Children:
   - {fileID: 4000014196853546}
   m_Father: {fileID: 0}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!4 &4000014196853546
 Transform:
   m_ObjectHideFlags: 1
@@ -70,10 +70,10 @@ Transform:
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 4000013480415816}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &23000010257403362
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -88,7 +88,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_Materials:
   - {fileID: 2100000, guid: a8a4ee44fdc6a9e4f918f776675707ee, type: 2}
-  m_SubsetIndices: 
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
@@ -96,12 +98,13 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_SelectedWireframeHidden: 0
+  m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!33 &33000011052018248
 MeshFilter:
@@ -120,7 +123,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 9.154763, y: -40.839394, z: 5.0604844}
+  m_Size: {x: 9.154763, y: 40.83939, z: 5.0604844}
   m_Center: {x: -50.953484, y: 20.54979, z: -0.16858101}
 --- !u!65 &65000013934360186
 BoxCollider:

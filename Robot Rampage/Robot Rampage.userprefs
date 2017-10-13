@@ -1,21 +1,23 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\RescueCounter.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Rescue_1.cs">
     <Files>
       <File FileName="Assets\Chip\PlayerBehaviorScript.cs" Line="58" Column="67" />
-      <File FileName="Assets\Chip\PlayerShoot.cs" Line="162" Column="1" />
-      <File FileName="Assets\Chip\PlayerHealth.cs" Line="5" Column="20" />
-      <File FileName="Assets\PyroParticles\Prefab\Script\FireLightScript.cs" Line="93" Column="7" />
-      <File FileName="Assets\PyroParticles\Prefab\Script\FireProjectileScript.cs" Line="107" Column="1" />
-      <File FileName="Assets\PyroParticles\Prefab\Script\FireBaseScript.cs" Line="100" Column="4" />
-      <File FileName="Assets\PyroParticles\Prefab\Script\FireCollisionForwardScript.cs" Line="25" Column="6" />
+      <File FileName="Assets\Chip\PlayerShoot.cs" Line="1" Column="1" />
+      <File FileName="Assets\Chip\PlayerHealth.cs" Line="1" Column="1" />
+      <File FileName="Assets\PyroParticles\Prefab\Script\FireLightScript.cs" Line="1" Column="1" />
+      <File FileName="Assets\PyroParticles\Prefab\Script\FireProjectileScript.cs" Line="1" Column="1" />
+      <File FileName="Assets\PyroParticles\Prefab\Script\FireBaseScript.cs" Line="1" Column="1" />
+      <File FileName="Assets\PyroParticles\Prefab\Script\FireCollisionForwardScript.cs" Line="23" Column="1" />
       <File FileName="Assets\radar\Radar.cs" Line="1" Column="1" />
-      <File FileName="Assets\RescueCounter.cs" Line="18" Column="3" />
-      <File FileName="Assets\Elevator_Doors.cs" Line="31" Column="4" />
-      <File FileName="Assets\SampleScenes\Menu\Scripts\ReturnToMainMenu.cs" Line="37" Column="2" />
-      <File FileName="Assets\Standard Assets\Utility\ForcedReset.cs" Line="13" Column="10" />
-      <File FileName="Assets\START.cs" Line="13" Column="34" />
+      <File FileName="Assets\RescueCounter.cs" Line="25" Column="17" />
+      <File FileName="Assets\Elevator_Doors.cs" Line="1" Column="1" />
+      <File FileName="Assets\SampleScenes\Menu\Scripts\ReturnToMainMenu.cs" Line="1" Column="1" />
+      <File FileName="Assets\Standard Assets\Utility\ForcedReset.cs" Line="1" Column="1" />
+      <File FileName="Assets\START.cs" Line="1" Column="1" />
       <File FileName="Assets\SampleScenes\Menu\Scripts\PauseMenu.cs" Line="1" Column="1" />
+      <File FileName="Assets\Enemy_Navigation\GunBotBehavior.cs" Line="30" Column="64" />
+      <File FileName="Assets\Rescue_1.cs" Line="33" Column="24" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

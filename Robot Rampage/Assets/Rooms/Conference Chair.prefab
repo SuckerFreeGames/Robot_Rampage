@@ -21,12 +21,13 @@ GameObject:
   - component: {fileID: 4000972584692602}
   - component: {fileID: 33250584492632234}
   - component: {fileID: 23432384769582360}
+  - component: {fileID: 208271244638424968}
   m_Layer: 0
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &1787129847614476
 GameObject:
@@ -37,7 +38,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4893772197113896}
   - component: {fileID: 65150024900840360}
-  - component: {fileID: 208652774966965382}
   m_Layer: 0
   m_Name: Conference Chair
   m_TagString: Untagged
@@ -65,7 +65,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1787129847614476}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 547.32, y: 2, z: 590.37}
+  m_LocalPosition: {x: 499.32, y: 2, z: 590.37}
   m_LocalScale: {x: 0.35, y: 0.35, z: 0.35}
   m_Children:
   - {fileID: 4000972584692602}
@@ -102,6 +102,7 @@ MeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!33 &33250584492632234
 MeshFilter:
@@ -120,20 +121,20 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: -10.975403, y: 16.04776, z: 12.505842}
+  m_Size: {x: 10.9754, y: 16.04776, z: 12.505842}
   m_Center: {x: -0.10551453, y: 8.111404, z: 0.13635254}
---- !u!208 &208652774966965382
+--- !u!208 &208271244638424968
 NavMeshObstacle:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1787129847614476}
+  m_GameObject: {fileID: 1652364541686894}
   m_Enabled: 1
   serializedVersion: 3
   m_Shape: 1
-  m_Extents: {x: 0.5, y: 0.5, z: 0.5}
+  m_Extents: {x: 4.5, y: 7.5000005, z: 5.5000005}
   m_MoveThreshold: 0.1
   m_Carve: 0
   m_CarveOnlyStationary: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 7.5000005, z: 0}
   m_TimeToStationary: 0.5

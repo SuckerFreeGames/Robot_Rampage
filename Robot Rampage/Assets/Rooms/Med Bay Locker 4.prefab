@@ -37,12 +37,13 @@ GameObject:
   - component: {fileID: 33552750117031270}
   - component: {fileID: 23533892989519914}
   - component: {fileID: 65139557287953990}
+  - component: {fileID: 208530907138872846}
   m_Layer: 0
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &4425360159995554
 Transform:
@@ -50,9 +51,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1238102279821226}
-  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 312.9, y: 11.5, z: -458.8}
-  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
+  m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 225.51996, y: 9.9, z: 802.41003}
+  m_LocalScale: {x: 0.40000024, y: 0.4, z: 0.40000024}
   m_Children:
   - {fileID: 4868509543566176}
   m_Father: {fileID: 0}
@@ -101,6 +102,7 @@ MeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!33 &33552750117031270
 MeshFilter:
@@ -121,3 +123,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 22.000006, y: 16, z: 8.000002}
   m_Center: {x: 0, y: 8, z: 0}
+--- !u!208 &208530907138872846
+NavMeshObstacle:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1817307399449524}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 11.000001, y: 8, z: 4}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 8, z: 0}
+  m_TimeToStationary: 0.5

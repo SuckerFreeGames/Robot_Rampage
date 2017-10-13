@@ -22,7 +22,7 @@ public class RescueCounter : MonoBehaviour {
 
 		RCtext.text = "Survivors: " + RCounter.ToString ();
 
-		if (RCounter == 0) {
+		if (RCounter <= 0) {
 //			Application.LoadLevel("Title_Level");
 			RCtext.text = "Escape to the Elevator!";
 		}

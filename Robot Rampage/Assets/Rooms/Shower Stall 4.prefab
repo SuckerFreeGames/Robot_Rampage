@@ -23,7 +23,7 @@ GameObject:
   m_Name: Shower Stall 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!1 &1449596485352286
@@ -37,12 +37,13 @@ GameObject:
   - component: {fileID: 33406037731496516}
   - component: {fileID: 23695600908675820}
   - component: {fileID: 65050487520529480}
+  - component: {fileID: 208885741974969884}
   m_Layer: 0
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &4269006290064850
 Transform:
@@ -50,8 +51,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1015177783262568}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 269.40955, y: 4, z: -712.09845}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 158.38998, y: 2, z: 686.8401}
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_Children:
   - {fileID: 4847044121667606}
@@ -101,6 +102,7 @@ MeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!33 &33406037731496516
 MeshFilter:
@@ -121,3 +123,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 14, y: 23, z: 1}
   m_Center: {x: 0, y: 11.5, z: 0}
+--- !u!208 &208885741974969884
+NavMeshObstacle:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1449596485352286}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 7.0000005, y: 11.500001, z: 0.5}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 11.500001, z: 0}
+  m_TimeToStationary: 0.5

@@ -19,7 +19,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4352078066601362}
-  - component: {fileID: 208573895252818464}
   m_Layer: 0
   m_Name: Conference chair 2
   m_TagString: Untagged
@@ -38,12 +37,13 @@ GameObject:
   - component: {fileID: 33755375131641372}
   - component: {fileID: 23046812977065752}
   - component: {fileID: 65082385661115908}
+  - component: {fileID: 208551433672263590}
   m_Layer: 0
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &4352078066601362
 Transform:
@@ -51,14 +51,14 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1087751952446600}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 551.58, y: 2, z: 545.91}
+  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
+  m_LocalPosition: {x: 467.52002, y: 2, z: 575.77}
   m_LocalScale: {x: 0.35, y: 0.35, z: 0.35}
   m_Children:
   - {fileID: 4862627189639836}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!4 &4862627189639836
 Transform:
   m_ObjectHideFlags: 1
@@ -102,6 +102,7 @@ MeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!33 &33755375131641372
 MeshFilter:
@@ -122,18 +123,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 9, y: 15, z: 10}
   m_Center: {x: -0.00012207031, y: 7.5, z: 0.00012207031}
---- !u!208 &208573895252818464
+--- !u!208 &208551433672263590
 NavMeshObstacle:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1087751952446600}
+  m_GameObject: {fileID: 1641519681707930}
   m_Enabled: 1
   serializedVersion: 3
   m_Shape: 1
-  m_Extents: {x: 0.5, y: 0.5, z: 0.5}
+  m_Extents: {x: 4.5, y: 7.5000005, z: 5}
   m_MoveThreshold: 0.1
   m_Carve: 0
   m_CarveOnlyStationary: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 7.5000005, z: 0}
   m_TimeToStationary: 0.5

@@ -16,12 +16,12 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 4000011080098136}
-  - 65: {fileID: 65000010746987924}
-  - 65: {fileID: 65000012681938728}
-  - 208: {fileID: 208000012544451592}
+  - component: {fileID: 4000011080098136}
+  - component: {fileID: 65000010746987924}
+  - component: {fileID: 65000012681938728}
+  - component: {fileID: 208000012544451592}
   m_Layer: 0
   m_Name: Conference Room Corner
   m_TagString: Untagged
@@ -34,17 +34,17 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 4000011140260772}
-  - 33: {fileID: 33000010491992142}
-  - 23: {fileID: 23000011969093902}
+  - component: {fileID: 4000011140260772}
+  - component: {fileID: 33000010491992142}
+  - component: {fileID: 23000011969093902}
   m_Layer: 0
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &4000011080098136
 Transform:
@@ -52,14 +52,14 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000010696248892}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -133.3, y: 2, z: -394.6}
-  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 285, y: 2, z: 631.3}
+  m_LocalScale: {x: 0.40000024, y: 0.4, z: 0.40000024}
   m_Children:
   - {fileID: 4000011140260772}
   m_Father: {fileID: 0}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!4 &4000011140260772
 Transform:
   m_ObjectHideFlags: 1
@@ -69,10 +69,10 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 4000011080098136}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &23000011969093902
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -87,7 +87,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_Materials:
   - {fileID: 2100000, guid: f73bd3f12d1527d419d721c1c5574b1d, type: 2}
-  m_SubsetIndices: 
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
@@ -95,12 +97,13 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_SelectedWireframeHidden: 0
+  m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!33 &33000010491992142
 MeshFilter:
@@ -119,7 +122,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 11.411804, y: 39.96843, z: -50.028893}
+  m_Size: {x: 11.411804, y: 39.96843, z: 50.02889}
   m_Center: {x: 25.237846, y: 20.080963, z: 5.0214844}
 --- !u!65 &65000012681938728
 BoxCollider:
@@ -131,7 +134,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 60.78467, y: 40.135468, z: -10.686356}
+  m_Size: {x: 60.78467, y: 40.135468, z: 10.68636}
   m_Center: {x: 0.27082825, y: 20.127243, z: -25.100342}
 --- !u!208 &208000012544451592
 NavMeshObstacle:
@@ -142,9 +145,9 @@ NavMeshObstacle:
   m_Enabled: 1
   serializedVersion: 3
   m_Shape: 1
-  m_Extents: {x: 0.5, y: 0.5, z: 0.5}
+  m_Extents: {x: 10, y: 10, z: 10}
   m_MoveThreshold: 0.1
   m_Carve: 0
   m_CarveOnlyStationary: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 10, y: 10, z: -10}
   m_TimeToStationary: 0.5

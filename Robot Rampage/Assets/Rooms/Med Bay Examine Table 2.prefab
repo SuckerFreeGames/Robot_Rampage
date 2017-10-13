@@ -20,6 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4128404293630876}
   - component: {fileID: 65672650676663928}
+  - component: {fileID: 208061847778303652}
   m_Layer: 0
   m_Name: Med Bay Examine Table 2
   m_TagString: Untagged
@@ -37,12 +38,13 @@ GameObject:
   - component: {fileID: 4816237217810674}
   - component: {fileID: 33242376173473502}
   - component: {fileID: 23976302045131966}
+  - component: {fileID: 208376486106674292}
   m_Layer: 0
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &4128404293630876
 Transform:
@@ -51,7 +53,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1097670166361930}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 153.22, y: 2, z: 829.97}
+  m_LocalPosition: {x: 160.84, y: 2.4, z: 762.47}
   m_LocalScale: {x: 0.35, y: 0.35, z: 0.35}
   m_Children:
   - {fileID: 4816237217810674}
@@ -122,3 +124,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 17.794456, y: 18.033318, z: 54.701202}
   m_Center: {x: 1.0839429, y: 8.516658, z: -0.77300483}
+--- !u!208 &208061847778303652
+NavMeshObstacle:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1097670166361930}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.5, y: 0.5, z: 0.5}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
+--- !u!208 &208376486106674292
+NavMeshObstacle:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1151060903467934}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 7.5000005, y: 8, z: 22.500002}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 8, z: 0}
+  m_TimeToStationary: 0.5

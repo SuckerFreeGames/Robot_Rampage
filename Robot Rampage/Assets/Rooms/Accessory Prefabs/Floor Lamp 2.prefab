@@ -28,8 +28,8 @@ GameObject:
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &1542035279038194
 GameObject:
@@ -39,6 +39,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4193344593523278}
+  - component: {fileID: 208425396367912052}
   m_Layer: 0
   m_Name: Floor Lamp 2
   m_TagString: Untagged
@@ -65,8 +66,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1542035279038194}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 701.3392, y: 4, z: -269.08054}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 503.40002, y: 2, z: 468}
   m_LocalScale: {x: 0.35, y: 0.35, z: 0.35}
   m_Children:
   - {fileID: 4057747631553388}
@@ -103,6 +104,7 @@ MeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!33 &33228557530702594
 MeshFilter:
@@ -147,3 +149,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 9.877098, y: 1.2306261, z: 9.661158}
   m_Center: {x: -0.056915283, y: 0.61531305, z: -0.2571869}
+--- !u!208 &208425396367912052
+NavMeshObstacle:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1542035279038194}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 7.5, y: 7.5, z: 7.5}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 10, z: 0}
+  m_TimeToStationary: 0.5
