@@ -32,7 +32,7 @@ public class GunBotBehavior : MonoBehaviour
         state = State.patrol;
         toggleBeam(false);
         navAgent.angularSpeed = 120;
-        navAgent.speed = 5;
+        navAgent.speed = 10;
     }
 
     // Update is called once per frame
@@ -102,7 +102,7 @@ public class GunBotBehavior : MonoBehaviour
         if (Vector3.Distance(this.transform.position, target.transform.position) > escapeDistance)
             {
                 navAgent.angularSpeed = 120;
-                navAgent.speed = 5;
+                navAgent.speed = 14;
                 navAgent.acceleration = 8;
               state = State.patrol;
 

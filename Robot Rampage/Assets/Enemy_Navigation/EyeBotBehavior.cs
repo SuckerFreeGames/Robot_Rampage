@@ -79,8 +79,9 @@ public class EyeBotBehavior : MonoBehaviour
             GameObject player = GameObject.FindGameObjectWithTag("Player");
             PlayerBehaviorScript playerScript = player.GetComponent<PlayerBehaviorScript>();
             audio.PlayOneShot(hurt1, 0.3f);
-            Destroy(gameObject);
+
             playerScript.score += pointValueOnKill;
+			Destroy(gameObject);
             return;
         }
 
