@@ -65,6 +65,22 @@ public class PowerModuleHealth : MonoBehaviour {
 
             currentHealth -= amount;
             hitParticles.Play();
+
+			int randomNumber = Random.Range (1, 3);
+			switch (randomNumber) {
+			case 1:
+				audio.PlayOneShot (hurt1, 0.3f);
+				break;
+
+			case 2:
+				audio.PlayOneShot (hurt2, 0.3f);
+				break;
+
+			case 3:
+				audio.PlayOneShot (hurt3, 0.3f);
+				break;
+
+			}
         }
 
 		if (currentHealth <= 0) {
@@ -78,21 +94,7 @@ public class PowerModuleHealth : MonoBehaviour {
           
 		}
 
-		int randomNumber = Random.Range (1, 3);
-		switch (randomNumber) {
-		case 1:
-			audio.PlayOneShot (hurt1, 0.3f);
-			break;
 
-		case 2:
-			audio.PlayOneShot (hurt2, 0.3f);
-			break;
-
-		case 3:
-			audio.PlayOneShot (hurt3, 0.3f);
-			break;
-
-		}
 	}
 
 	public void Death(){

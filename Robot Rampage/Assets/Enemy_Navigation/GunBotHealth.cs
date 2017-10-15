@@ -42,37 +42,25 @@ public class GunBotHealth : MonoBehaviour {
 	public void TakeDamage(int amount, Vector3 hitPoint){
 		// we need to find out if the enemy is already or not
 		if (isDead)
+	
 			return;
 
 		currentHealth -= amount;
 		//hitParticles.transform.position = hitPoint;
+
 		hitParticles.Play ();
 		if (currentHealth <= 0) {
 			
 			GameObject player = GameObject.FindGameObjectWithTag ("Player");
             PlayerBehaviorScript playerScript = player.GetComponent<PlayerBehaviorScript>();
 			playerScript.score += pointValueOnKill;
-			audio.PlayOneShot (scoreUp, 1.0f);
+
 			Death();
             
           
 		}
 
-		int randomNumber = Random.Range (1, 3);
-		switch (randomNumber) {
-		case 1:
-			audio.PlayOneShot (hurt1, 0.3f);
-			break;
 
-		case 2:
-			audio.PlayOneShot (hurt2, 0.3f);
-			break;
-
-		case 3:
-			audio.PlayOneShot (hurt3, 0.3f);
-			break;
-
-		}
 	}
 
 	public void Death(){
@@ -82,6 +70,7 @@ public class GunBotHealth : MonoBehaviour {
         Vector3 position2 = transform.position;
 
 
+	
         Rigidbody clone;
         GameObject inst = (GameObject)Instantiate(junk, position, Quaternion.identity);
         GameObject inst4 = (GameObject)Instantiate(explode, position, Quaternion.identity);

@@ -70,18 +70,20 @@ public class EyeBotBehavior : MonoBehaviour
     void Update()
     {
 
+	
+
         if (isDead)
         {
+
             Vector3 position = transform.position += Vector3.up * 10;
 
-            GameObject inst = (GameObject)Instantiate(explo, position, Quaternion.identity);
-            GameObject inst2 = (GameObject)Instantiate(junk, position, Quaternion.identity);
-            GameObject player = GameObject.FindGameObjectWithTag("Player");
-            PlayerBehaviorScript playerScript = player.GetComponent<PlayerBehaviorScript>();
-            audio.PlayOneShot(hurt1, 0.3f);
+			GameObject inst = (GameObject)Instantiate(explo, position, Quaternion.identity);
+			GameObject inst2 = (GameObject)Instantiate(junk, position, Quaternion.identity);
+			GameObject player = GameObject.FindGameObjectWithTag("Player");
+			PlayerBehaviorScript playerScript = player.GetComponent<PlayerBehaviorScript>();
 
-            playerScript.score += pointValueOnKill;
 			Destroy(gameObject);
+			playerScript.score += pointValueOnKill;
             return;
         }
 
@@ -149,7 +151,7 @@ public class EyeBotBehavior : MonoBehaviour
     {
 
 
-
+		audio.PlayOneShot(hurt1, 0.3f);
         hitParticles.Play();
 
       

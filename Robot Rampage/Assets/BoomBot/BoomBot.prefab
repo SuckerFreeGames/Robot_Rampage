@@ -1397,9 +1397,9 @@ MonoBehaviour:
   startingHealth: 50
   currentHealth: 50
   pointValueOnKill: 10
-  hurt1: {fileID: 8300000, guid: 91c8aec9998f783408e75f6c68a40320, type: 3}
-  hurt2: {fileID: 8300000, guid: 5cc4042f46408e744864fbde31ee57de, type: 3}
-  hurt3: {fileID: 8300000, guid: d3fe02c9c1fd07c4db756367b710bf69, type: 3}
+  hurt1: {fileID: 8300000, guid: b57a5b81c8663e14bbf70a3cc6ff01ad, type: 3}
+  hurt2: {fileID: 8300000, guid: b57a5b81c8663e14bbf70a3cc6ff01ad, type: 3}
+  hurt3: {fileID: 8300000, guid: 15b61cecc9c413944b23744fbd523914, type: 3}
   scoreUp: {fileID: 0}
 --- !u!135 &13530282
 SphereCollider:

@@ -22,6 +22,9 @@ public class GunBotBehavior : MonoBehaviour
     public GameObject beamlight;
     public ParticleSystem particlesofBeam;
 
+	AudioSource audio;
+	public AudioClip fire;
+
     //
     // Use this for initialization
     void Start()
@@ -112,7 +115,7 @@ public class GunBotBehavior : MonoBehaviour
         else if (Vector3.Distance(this.transform.position, target.transform.position) <= attackRange)
             {
              
-               
+
                 navAgent.angularSpeed = 70;
                 navAgent.speed = 5;
                 navAgent.acceleration = 2;
@@ -124,6 +127,7 @@ public class GunBotBehavior : MonoBehaviour
         else if (Vector3.Distance(this.transform.position, target.transform.position) <= attackRange)
             {
                 //toggle beam on
+
                 toggleBeam(true);
 
             }
