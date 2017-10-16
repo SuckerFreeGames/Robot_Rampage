@@ -1400,6 +1400,7 @@ MonoBehaviour:
   hurt1: {fileID: 8300000, guid: b57a5b81c8663e14bbf70a3cc6ff01ad, type: 3}
   hurt2: {fileID: 8300000, guid: b57a5b81c8663e14bbf70a3cc6ff01ad, type: 3}
   hurt3: {fileID: 8300000, guid: 15b61cecc9c413944b23744fbd523914, type: 3}
+  spawn: {fileID: 8300000, guid: 19c0f8560354c2448b4e7c0eef006c92, type: 3}
   scoreUp: {fileID: 0}
 --- !u!135 &13530282
 SphereCollider:

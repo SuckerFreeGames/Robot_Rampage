@@ -10,9 +10,12 @@ public class SpawnEnemyScript : MonoBehaviour {
     private ParticleSystem Portal;
     PlayerBehaviorScript behaviorScript;
     //public ParticleSystem[] SpawningPortal;
+//	AudioSource audio;
+//	public AudioClip spawnsfx;
     
 	// Use this for initialization
 	void Start () {
+	//	audio = GetComponent<AudioSource> ();
 		timer = 0;
 		GameObject player = GameObject.FindGameObjectWithTag ("Player");
         behaviorScript = player.GetComponent<PlayerBehaviorScript>();
@@ -24,7 +27,10 @@ public class SpawnEnemyScript : MonoBehaviour {
 
 
 	}
-	
+
+//	void PlaySFX () {
+	//	audio.PlayOneShot (spawnsfx, 0.70f);
+//	}
 
 	void Update () {
 		if (behaviorScript.gameOver == true)
@@ -37,13 +43,12 @@ public class SpawnEnemyScript : MonoBehaviour {
 
 
 			// reset the timer
-            
+			//PlaySFX ();
 			Instantiate(objectToSpawn, transform.position, transform.rotation);
-            
 			timer = 0;
 
 
 		}
-     
+
 	}
 }

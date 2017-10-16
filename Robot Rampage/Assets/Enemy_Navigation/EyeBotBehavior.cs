@@ -49,6 +49,7 @@ public class EyeBotBehavior : MonoBehaviour
     public AudioClip hurt1;
     public AudioClip hurt2;
     public AudioClip hurt3;
+	public AudioClip laser;
     public AudioClip scoreUp;
 
     public GameObject[] spawners;
@@ -117,11 +118,13 @@ public class EyeBotBehavior : MonoBehaviour
                 if (timer >= delay / 2)
                 {
                     light2.SetActive(true);
+
                 }
 
                 if (timer >= delay)
                 {
                     light2.SetActive(true);
+					audio.PlayOneShot(laser, 0.3f);
                     fire.Play();
                     //GameObject inst4 = (GameObject)Instantiate(fire, transform.position, Quaternion.identity);
                     timer = 0;
@@ -151,7 +154,7 @@ public class EyeBotBehavior : MonoBehaviour
     {
 
 
-		audio.PlayOneShot(hurt1, 0.3f);
+		audio.PlayOneShot(hurt1, 0.5f);
         hitParticles.Play();
 
       
@@ -183,7 +186,7 @@ public class EyeBotBehavior : MonoBehaviour
 
         if (Vector3.Distance(this.transform.position, target.transform.position) > escapeDistance)
         {
-
+			audio.PlayOneShot(hurt3, 1f);
             state = State.scanning;
 
         }
@@ -231,6 +234,7 @@ public class EyeBotBehavior : MonoBehaviour
                 {
                     if (hit.transform.tag == "Player")
                     {
+						audio.PlayOneShot(hurt2, 1f);
                         return true;
                     }
 
@@ -297,7 +301,7 @@ public class EyeBotBehavior : MonoBehaviour
         }
         */
 
-        
+	
             targetPoint = new Vector3(target.transform.position.x, transform.position.y, target.transform.position.z) - transform.position;
             targetRotation = Quaternion.LookRotation(targetPoint, Vector3.up);
             transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * 2.0f);

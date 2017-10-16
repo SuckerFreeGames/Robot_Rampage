@@ -22,6 +22,7 @@ public class EnemyHealth : MonoBehaviour {
 	public AudioClip hurt1;
 	public AudioClip hurt2;
 	public AudioClip hurt3;
+	public AudioClip spawn;
 	public AudioClip scoreUp;
 
 
@@ -32,6 +33,7 @@ public class EnemyHealth : MonoBehaviour {
 		agent = GetComponent<UnityEngine.AI.NavMeshAgent> ();
 		hitParticles = GetComponent<ParticleSystem> ();
 		audio = GetComponent<AudioSource> ();
+		audio.PlayOneShot (spawn, 0.1f);
 	}
 	
 	// Update is called once per frame
@@ -53,7 +55,7 @@ public class EnemyHealth : MonoBehaviour {
 			GameObject player = GameObject.FindGameObjectWithTag ("Player");
             PlayerBehaviorScript playerScript = player.GetComponent<PlayerBehaviorScript>();
 			playerScript.score += pointValueOnKill;
-			audio.PlayOneShot (scoreUp, 1.0f);
+			//audio.PlayOneShot (scoreUp, 1.0f);
 			Death();
             
           

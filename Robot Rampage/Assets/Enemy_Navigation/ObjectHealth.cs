@@ -60,13 +60,13 @@ public class ObjectHealth : MonoBehaviour {
 			GameObject player = GameObject.FindGameObjectWithTag ("Player");
             PlayerBehaviorScript playerScript = player.GetComponent<PlayerBehaviorScript>();
 			playerScript.score += pointValueOnKill;
-			audio.PlayOneShot (scoreUp, 1.0f);
+			//audio.PlayOneShot (scoreUp, 1.0f);
 			Death();
             
           
 		}
 
-		int randomNumber = Random.Range (1, 3);
+		/*int randomNumber = Random.Range (1, 3);
 		switch (randomNumber) {
 		case 1:
 			audio.PlayOneShot (hurt1, 0.3f);
@@ -78,10 +78,10 @@ public class ObjectHealth : MonoBehaviour {
 
 		case 3:
 			audio.PlayOneShot (hurt3, 0.3f);
-			break;
+			break;*/
 
 		}
-	}
+	//}
 
 	public void Death(){
   
