@@ -7,16 +7,26 @@ public class EnemyMovement : MonoBehaviour {
 	UnityEngine.AI.NavMeshAgent nav;
 
 	// Use this for initialization
-	void Start () {
+	void Awake () {
 		player = GameObject.FindGameObjectWithTag ("Player");
 		nav = GetComponent<UnityEngine.AI.NavMeshAgent> ();
-	}
+
+    }
 	
 	// Update is called once per frame
 	void Update () {
-		if (nav.enabled == false)
-			return;
-		nav.SetDestination (player.transform.position);
-	
-	}
+        if (nav.enabled == false)
+        {
+            return;
+        }
+        else
+        {
+            setnavdest();
+        }
+    }
+
+    private void setnavdest()
+    {
+        nav.SetDestination(player.transform.position);
+    }
 }

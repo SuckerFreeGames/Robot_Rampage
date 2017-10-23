@@ -98,7 +98,7 @@ public class EyeBotBehavior : MonoBehaviour
 
                 if (elem != null)
                 {
-                    elem.transform.Find("SpawnPortal").gameObject.SetActive(false);
+                    elem.transform.Find(name: "SpawnPortal").gameObject.SetActive(false);
                     elem.GetComponent<SpawnEnemyScript>().enabled = false;
                 }
             }

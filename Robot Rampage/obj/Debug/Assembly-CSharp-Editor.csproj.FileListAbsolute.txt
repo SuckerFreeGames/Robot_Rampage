@@ -39,3 +39,7 @@ C:\Users\Public\Documents\Unity Projects\Robotic Rampage\obj\Debug\Assembly-CSha
 C:\Users\Public\Documents\Unity Projects\Robotic Rampage\obj\Debug\Assembly-CSharp-Editor.pdb
 C:\Users\Public\Documents\Unity Projects\Robotic Rampage\Temp\bin\Debug\OSVR.ClientKit.dll
 C:\Users\Public\Documents\Unity Projects\Robotic Rampage\Temp\bin\Debug\OSVR.ClientKit.pdb
+C:\Users\cool_\Desktop\Robot_Rampage\Robot Rampage\obj\Debug\Assembly-CSharp-Editor.csprojResolveAssemblyReference.cache
+C:\Users\cool_\Desktop\Robot_Rampage\Robot Rampage\obj\Debug\Assembly-CSharp-Editor.csproj.CoreCompileInputs.cache
+C:\Users\cool_\Desktop\Robot_Rampage\Robot Rampage\obj\Debug\Assembly-CSharp-Editor.dll
+C:\Users\cool_\Desktop\Robot_Rampage\Robot Rampage\obj\Debug\Assembly-CSharp-Editor.pdb

@@ -29,7 +29,7 @@ public class GunBotBehavior : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-     
+		audio = GetComponent<AudioSource> ();
         navAgent = GetComponent<UnityEngine.AI.NavMeshAgent>();
         currentTarget = waypoints [findIndexOfClosest()];
         state = State.patrol;
@@ -119,16 +119,17 @@ public class GunBotBehavior : MonoBehaviour
                 navAgent.angularSpeed = 70;
                 navAgent.speed = 5;
                 navAgent.acceleration = 2;
-                //toggle beam on
-                toggleBeam(true);
+
+            //toggle beam on
+            toggleBeam(true);
 
             }
 
         else if (Vector3.Distance(this.transform.position, target.transform.position) <= attackRange)
             {
-                //toggle beam on
+            //toggle beam on
 
-                toggleBeam(true);
+            toggleBeam(true);
 
             }
         else if (Vector3.Distance(this.transform.position, target.transform.position) > attackRange)
@@ -212,13 +213,17 @@ public class GunBotBehavior : MonoBehaviour
 
             if (timer >= delay / 2)
             {
+
                 beamlight.SetActive(true);
             }
 
             if (timer >= delay)
             {
+
+                audio.PlayOneShot(fire, 0.5f);
                 particlesofBeam.Play();
                 timer = 0;
+
             }
 
             
@@ -229,9 +234,9 @@ public class GunBotBehavior : MonoBehaviour
         else
 
         {
-          
-           
-                 particlesofBeam.Stop();
+
+
+            particlesofBeam.Stop();
                  beamlight.SetActive(false);
 
         }
